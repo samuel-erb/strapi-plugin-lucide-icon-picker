@@ -1,7 +1,21 @@
 {
-  "version": "0.0.0",
-  "keywords": [],
+  "name": "lucide-icon-picker",
+  "version": "1.0.0",
+  "description": "A Strapi v5 custom field plugin for selecting Lucide icons. Icons are stored as kebab-case strings.",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "custom-field",
+    "icons",
+    "lucide",
+    "icon-picker",
+    "ui",
+    "cms"
+  ],
   "type": "commonjs",
+  "main": "./dist/server/index.js",
+  "module": "./dist/server/index.mjs",
+  "types": "./dist/server/src/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -20,8 +34,18 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel-erb/strapi-plugin-lucide-icon-picker.git"
+  },
+  "homepage": "https://github.com/samuel-erb/strapi-plugin-lucide-icon-picker#readme",
+  "bugs": {
+    "url": "https://github.com/samuel-erb/strapi-plugin-lucide-icon-picker/issues"
+  },
   "scripts": {
     "build": "strapi-plugin build",
     "watch": "strapi-plugin watch",
@@ -62,10 +86,18 @@
     "kind": "plugin",
     "name": "lucide-icon-picker",
     "displayName": "Lucide Icon Picker",
-    "description": "Input field for picking lucide icons. Output is the corresponding lucide icon name as a string."
+    "description": "A Strapi v5 custom field plugin for selecting Lucide icons. Icons are stored as kebab-case strings."
   },
-  "name": "lucide-icon-picker",
-  "description": "Input field for picking lucide icons. Output is the corresponding lucide icon name as a string.",
   "license": "MIT",
-  "author": "Samuel Erb <samuel.erb@me.com>"
+  "author": {
+    "name": "Samuel Erb",
+    "email": "samuel.erb@me.com"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
