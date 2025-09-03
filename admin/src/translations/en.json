@@ -1,1 +1,5 @@
-{}
+{
+  "lucide-icon-picker.label": "Lucide Icon",
+  "lucide-icon-picker.description": "Select a Lucide icon",
+  "lucide-icon-picker.plugin.name": "Lucide Icon Picker"
+}

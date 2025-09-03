@@ -1,32 +1,26 @@
-import { getTranslation } from './utils/getTranslation';
 import { PLUGIN_ID } from './pluginId';
-import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
 
 export default {
   register(app: any) {
-    app.addMenuLink({
-      to: `plugins/${PLUGIN_ID}`,
-      icon: PluginIcon,
+    app.customFields.register({
+      name: 'lucide-icon',
+      plugin: PLUGIN_ID,
+      type: 'string',
       intlLabel: {
-        id: `${PLUGIN_ID}.plugin.name`,
-        defaultMessage: PLUGIN_ID,
+        id: 'lucide-icon-picker.label',
+        defaultMessage: 'Lucide Icon',
       },
-      Component: async () => {
-        const { App } = await import('./pages/App');
-
-        return App;
+      intlDescription: {
+        id: 'lucide-icon-picker.description',
+        defaultMessage: 'Select a Lucide icon',
       },
-    });
-
-    app.registerPlugin({
-      id: PLUGIN_ID,
-      initializer: Initializer,
-      isReady: false,
-      name: PLUGIN_ID,
+      icon: PluginIcon,
+      components: {
+        Input: async () => import('./components/LucideIconField').then(module => module.LucideIconField),
+      },
     });
   },
-
   async registerTrads({ locales }: { locales: string[] }) {
     return Promise.all(
       locales.map(async (locale) => {
