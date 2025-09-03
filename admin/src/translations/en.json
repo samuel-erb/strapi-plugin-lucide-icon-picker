@@ -1,5 +1,14 @@
 {
   "lucide-icon-picker.label": "Lucide Icon",
   "lucide-icon-picker.description": "Select a Lucide icon",
-  "lucide-icon-picker.plugin.name": "Lucide Icon Picker"
+  "lucide-icon-picker.plugin.name": "Lucide Icon Picker",
+  "lucide-icon-picker.button.select": "Select",
+  "lucide-icon-picker.button.change": "Change",
+  "lucide-icon-picker.button.clear": "Clear Selection",
+  "lucide-icon-picker.placeholder.search": "Search icons...",
+  "lucide-icon-picker.placeholder.no-selection": "No icon selected",
+  "lucide-icon-picker.aria.toggle": "Change icon",
+  "lucide-icon-picker.aria.picker": "icon-picker",
+  "lucide-icon-picker.options.required.label": "Required field",
+  "lucide-icon-picker.options.required.description": "You won't be able to create an entry if this field is empty"
 }

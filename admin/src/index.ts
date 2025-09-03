@@ -1,11 +1,12 @@
 import { PLUGIN_ID } from './pluginId';
 import { PluginIcon } from './components/PluginIcon';
+import { getTranslation } from './utils/getTranslation';
 
 export default {
   register(app: any) {
     app.customFields.register({
       name: 'lucide-icon',
-      plugin: PLUGIN_ID,
+      pluginId: PLUGIN_ID,
       type: 'string',
       intlLabel: {
         id: 'lucide-icon-picker.label',
@@ -17,8 +18,32 @@ export default {
       },
       icon: PluginIcon,
       components: {
-        Input: async () => import('./components/LucideIconField').then(module => module.LucideIconField),
+        Input: async () => import('./components/Input'),
       },
+      options: {
+        advanced: [
+          {
+            sectionTitle: {
+              id: 'global.settings',
+              defaultMessage: 'Settings',
+            },
+            items: [
+              {
+                name: 'required',
+                type: 'checkbox',
+                intlLabel: {
+                  id: getTranslation('options.required.label'),
+                  defaultMessage: 'Required field',
+                },
+                description: {
+                  id: getTranslation('options.required.description'),
+                  defaultMessage: "You won't be able to create an entry if this field is empty",
+                },
+              },
+            ],
+          },
+        ],
+      }
     });
   },
   async registerTrads({ locales }: { locales: string[] }) {

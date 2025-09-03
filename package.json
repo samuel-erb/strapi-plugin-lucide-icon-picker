@@ -1,6 +1,6 @@
 {
   "name": "@samuel-erb/strapi-plugin-lucide-icon-picker",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Strapi v5 custom field plugin for selecting Lucide icons. Icons are stored as kebab-case strings.",
   "keywords": [
     "strapi",

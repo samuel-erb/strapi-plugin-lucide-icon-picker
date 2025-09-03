@@ -1,0 +1,14 @@
+{
+  "lucide-icon-picker.label": "Lucide Icon",
+  "lucide-icon-picker.description": "Lucide Icon auswählen",
+  "lucide-icon-picker.plugin.name": "Lucide Icon Picker",
+  "lucide-icon-picker.button.select": "Auswählen",
+  "lucide-icon-picker.button.change": "Ändern",
+  "lucide-icon-picker.button.clear": "Auswahl löschen",
+  "lucide-icon-picker.placeholder.search": "Icons durchsuchen...",
+  "lucide-icon-picker.placeholder.no-selection": "Kein Icon ausgewählt",
+  "lucide-icon-picker.aria.toggle": "Icon ändern",
+  "lucide-icon-picker.aria.picker": "Icon-Auswahl",
+  "lucide-icon-picker.options.required.label": "Pflichtfeld",
+  "lucide-icon-picker.options.required.description": "Ein Eintrag kann ohne dieses Feld nicht erstellt werden"
+}
