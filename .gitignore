@@ -136,3 +136,11 @@ yarn-error.log
 ############################
 
 coverage
+
+
+############################
+# Generated Data
+############################
+
+admin/src/data/categoriesData.ts
+admin/src/data/iconsData.ts

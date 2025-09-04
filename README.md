@@ -123,8 +123,11 @@ This plugin supports all icons from the [Lucide icon library](https://lucide.dev
 # Install dependencies
 npm install
 
-# Build the plugin
+# Download latest Lucide icons and build the plugin
 npm run build
+
+# Or update icons manually
+npm run update:lucide-data
 
 # Run TypeScript checks
 npm run test:ts:front
@@ -152,6 +155,12 @@ npm run develop
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit issues and enhancement requests.
+
+## ☕ Support
+
+If you find this plugin helpful, consider supporting its development:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/samuelerb)
 
 ## 📄 License
 
