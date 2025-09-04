@@ -6,15 +6,20 @@ A Strapi v5 custom field plugin that provides an intuitive icon picker for Lucid
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 
+![Plugin Preview](./preview.gif)
+
 ## ✨ Features
 
 - 🎨 **Visual Icon Browser** - Browse through 1600+ Lucide icons with live preview
-- 🔍 **Real-time Search** - Filter icons instantly as you type
+- 📂 **Category Organization** - Icons grouped by categories (Design, Text, Communication, etc.)
+- 🔍 **Smart Search** - Filter icons by name, tags, and categories
+- 🌙 **Dark Mode Support** - Seamless integration with Strapi's dark theme
 - 💾 **String Storage** - Icons stored as kebab-case strings (e.g., "arrow-down")
 - 🌐 **API Ready** - Access icon names through Strapi's REST & GraphQL APIs
 - ✅ **TypeScript Support** - Full type safety and IntelliSense
 - 📱 **Responsive Design** - Works seamlessly across all device sizes
-- ⚡ **Performance Optimized** - Lazy loading and efficient rendering
+- ⚡ **Auto-sync** - Automatically downloads latest icons from Lucide before building
+- 🎯 **Enhanced UX** - Tooltips and improved visual feedback
 
 ## 🚀 Installation
 

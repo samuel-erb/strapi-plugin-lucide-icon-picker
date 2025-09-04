@@ -7,7 +7,7 @@ const register = ({ strapi }: { strapi: Core.Strapi }) => {
     plugin: PLUGIN_ID,
     type: 'string',
     inputSize: {
-      default: 4,
+      default: 6,
       isResizable: true,
     },
   });

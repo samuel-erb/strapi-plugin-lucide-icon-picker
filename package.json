@@ -1,6 +1,6 @@
 {
   "name": "@samuel-erb/strapi-plugin-lucide-icon-picker",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A Strapi v5 custom field plugin for selecting Lucide icons. Icons are stored as kebab-case strings.",
   "keywords": [
     "strapi",
@@ -47,12 +47,13 @@
     "url": "https://github.com/samuel-erb/strapi-plugin-lucide-icon-picker/issues"
   },
   "scripts": {
-    "build": "strapi-plugin build",
+    "build": "npm run update:lucide-data && strapi-plugin build",
     "watch": "strapi-plugin watch",
     "watch:link": "strapi-plugin watch:link",
     "verify": "strapi-plugin verify",
     "test:ts:front": "run -T tsc -p admin/tsconfig.json",
-    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+    "test:ts:back": "run -T tsc -p server/tsconfig.json",
+    "update:lucide-data": "node scripts/build-icons.js"
   },
   "dependencies": {
     "@strapi/admin": "^5.23.2",
